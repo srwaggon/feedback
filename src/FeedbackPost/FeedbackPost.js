@@ -20,7 +20,9 @@ class FeedbackPost extends Component {
     return (
       <div className="FeedbackPost">
         <div className="creationDate">{date}</div>
-        {this.props.text}
+        <pre className="feedbackText">
+          {this.props.text}
+        </pre>
       </div>
     );
   }

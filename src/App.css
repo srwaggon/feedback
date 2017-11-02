@@ -24,6 +24,7 @@ footer {
   width: 578px;
   background-color: #eeeee;
   resize: none;
+  white-space: pre-wrap;
 }
 
 .prompts {
@@ -43,7 +44,6 @@ footer {
 .promptsButton {
   display: block;
   margin: 20px 0 0 0;
-
 }
 
 .submit {
