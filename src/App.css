@@ -3,6 +3,10 @@ body {
   font-family: sans-serif;
 }
 
+footer {
+  height: 100px;
+}
+
 .App {
   padding: 0 20px;
   width: 600px;
@@ -26,6 +30,10 @@ body {
   margin: 20px 0;
 }
 
+.promptHeader {
+    margin-top: 0;
+}
+
 .promptsQuestion {
   margin: 10px 0;
   padding: 10px;
@@ -34,7 +42,7 @@ body {
 
 .promptsButton {
   display: block;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 
 }
 

@@ -72,8 +72,15 @@ class App extends Component {
   getFeedbackDirections = () => {
     return (
       <div className='directions'>
-        Please take a moment to give us all some honest, critical feedback.
-        <br />Please try to make it constructive (or try A.S.K.), but honesty is key in feedback.
+        <p>
+          {"I've heard that safety is a concern preventing effective feedback within our office. For this reason, I wanted to provide a safe platform for feedback about our culture so that we can all improve."}
+        </p>
+
+        <p>
+          {"Please take a moment to give us all some honest, critical feedback. Please try to make it constructive (or try A.S.K.), but honesty is key in feedback."}
+        </p>
+
+        <a href="https://sites.google.com/a/pivotal.io/pivotalwiki/hr/feedback-reviews">Pivotal Labs Wikipage on Feedback</a>
       </div>
     );
   }
@@ -110,7 +117,7 @@ class App extends Component {
     this.setState({activePromptIndex: this.randomPromptIndex()});
   }
 
-  getPrompts = () => {
+  getPrompt = () => {
     if (this.state.activePromptIndex < 0) {
       return <div></div>;
     }
@@ -119,13 +126,18 @@ class App extends Component {
 
     return  (
       <div className="prompts">
-        <div className="promptsQuestion">{activePrompt}</div>
-        <div className="promptsButton">
-          <input
-            type="button"
-            value="Try a New Prompt"
-            onClick={this.onNewPromptClick}
-          />
+        <div className="promptsQuestion">
+          <h3 className="promptHeader">Optional Prompt</h3>
+          <div>
+            ({this.state.activePromptIndex + 1}/{this.state.prompts.length}) {activePrompt}
+          </div>
+          <div className="promptsButton">
+            <input
+              type="button"
+              value="Try a New Prompt"
+              onClick={this.onNewPromptClick}
+            />
+          </div>
         </div>
       </div>
     );
@@ -136,9 +148,10 @@ class App extends Component {
       <div className="App">
         <h1>Feedback</h1>
         {this.getFeedbackDirections()}
-        {this.getPrompts()}
+        {this.getPrompt()}
         {this.getFeedbackForm()}
         {this.getFeedbackPosts()}
+        <footer />
       </div>
     );
   }
