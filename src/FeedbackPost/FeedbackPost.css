@@ -1,0 +1,14 @@
+.FeedbackPost {
+  padding: 10px;
+  margin: 0 0 20px 0;
+  border: solid thin darkgrey;
+}
+
+.creationDate {
+  margin: 0 0 10px 0;
+
+  font-weight: bold;
+}
+
+.upvotes {
+}

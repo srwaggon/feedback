@@ -1,0 +1,44 @@
+body {
+  color: #455;
+  font-family: sans-serif;
+}
+
+.App {
+  padding: 0 20px;
+  width: 600px;
+  height: 100%;
+}
+
+.directions {
+  margin: 20px 0;
+}
+
+.feedbackTextArea {
+  padding: 10px;
+  display: block;
+  height: 100px;
+  width: 578px;
+  background-color: #eeeee;
+  resize: none;
+}
+
+.prompts {
+  margin: 20px 0;
+}
+
+.promptsQuestion {
+  margin: 10px 0;
+  padding: 10px;
+  border: solid thin darkgrey;
+}
+
+.promptsButton {
+  display: block;
+  margin: 20px 0;
+
+}
+
+.submit {
+  display: block;
+  margin: 20px 0;
+}
