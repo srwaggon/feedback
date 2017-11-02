@@ -32,7 +32,11 @@ footer {
 }
 
 .promptHeader {
-    margin-top: 0;
+  display: inline;
+}
+
+.promptHeaderWrapper {
+  margin-bottom: 10px;
 }
 
 .promptsQuestion {

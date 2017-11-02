@@ -127,9 +127,11 @@ class App extends Component {
     return  (
       <div className="prompts">
         <div className="promptsQuestion">
-          <h3 className="promptHeader">Optional Prompt</h3>
+          <div className="promptHeaderWrapper">
+            <h3 className="promptHeader">Optional Prompt</h3> ({this.state.activePromptIndex + 1}/{this.state.prompts.length})
+          </div>
           <div>
-            ({this.state.activePromptIndex + 1}/{this.state.prompts.length}) {activePrompt}
+            {activePrompt}
           </div>
           <div className="promptsButton">
             <input
@@ -148,8 +150,8 @@ class App extends Component {
       <div className="App">
         <h1>Feedback</h1>
         {this.getFeedbackDirections()}
-        {this.getPrompt()}
         {this.getFeedbackForm()}
+        {this.getPrompt()}
         {this.getFeedbackPosts()}
         <footer />
       </div>
